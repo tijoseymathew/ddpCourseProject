@@ -43,6 +43,6 @@ knit        : slidify::knit2slides
 * The user has the choice of randomly generating n samples in a two dimensional space.
 * The user can also select the number of cluster centers.
 * The generated samples and the cluster center are shown in two different plots.
-* Playing around with the different setting allows user to understand certain aspects of k-Means clustering.
+* Playing around with the different setting allows user to understand certain aspects of k-Means clustering.?
 
 
