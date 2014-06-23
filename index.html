@@ -235,12 +235,7 @@
 
 <pre><code class="r">data(iris)
 require(ggplot2)
-</code></pre>
-
-<pre><code>## Loading required package: ggplot2
-</code></pre>
-
-<pre><code class="r">kc &lt;- kmeans(iris[, -5], 3)
+kc &lt;- kmeans(iris[, -5], 3)
 iris$kCluster &lt;- factor(kc$cluster)
 ggplot(iris)+geom_point(aes(x=Sepal.Length, y=Sepal.Width, shape=Species, col=kCluster))
 </code></pre>
@@ -266,7 +261,7 @@ ggplot(iris)+geom_point(aes(x=Sepal.Length, y=Sepal.Width, shape=Species, col=kC
 
 ## Iris Example
 * Testing k-Means on Iris data to check for naturally formed clusters of Species.
-```{r, cache=TRUE, fig.height=4.5}
+```{r, message=FALSE, fig.height=4.5}
 data(iris)
 require(ggplot2)
 kc &lt;- kmeans(iris[, -5], 3)

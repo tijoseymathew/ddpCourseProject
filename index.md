@@ -48,13 +48,6 @@ knit        : slidify::knit2slides
 ```r
 data(iris)
 require(ggplot2)
-```
-
-```
-## Loading required package: ggplot2
-```
-
-```r
 kc <- kmeans(iris[, -5], 3)
 iris$kCluster <- factor(kc$cluster)
 ggplot(iris)+geom_point(aes(x=Sepal.Length, y=Sepal.Width, shape=Species, col=kCluster))
