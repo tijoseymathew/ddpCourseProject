@@ -44,7 +44,7 @@ knit        : slidify::knit2slides
 
 ## Iris Example
 * Testing k-Means on Iris data to check for naturally formed clusters of Species.
-```{r, cache=TRUE, fig.height=4.5}
+```{r, message=FALSE, fig.height=4.5}
 data(iris)
 require(ggplot2)
 kc <- kmeans(iris[, -5], 3)
